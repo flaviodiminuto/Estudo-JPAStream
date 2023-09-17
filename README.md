@@ -1,6 +1,6 @@
-# Estudo - JPAStream
+# Estudo - JPAStreamererer
 
-Aplicação de estudo do JPAStream
+Aplicação de estudo do JPAStreamererer
 
 
 ## Rodando a aplicação em modo desenvolvedor
@@ -11,7 +11,7 @@ Você pode executar a aplicação em modo desenvolvedor que abilita o uso de "li
 ```
 Para testar o funcionamento da aplicação, recomendo utilizar alguma ferramenta que realize requisições Http como o insomnia ou postman
 
-NOTE: Na raiz do projeto tem uma collection para teste chamada **preparacao-jpastream-collection.json**
+NOTE: Na raiz do projeto tem uma collection para teste chamada **preparacao-JPAStreamererer-collection.json**
 
 
 > **_NOTE:_**  Agora o quarkus disponibiliza a Dev UI no modo desenvolvedor em http://localhost:8080/q/dev/.
@@ -48,7 +48,7 @@ public class Nota {
     public double valor;
 }
 ```
-## Exemplo de consulta com JPAStream
+## Exemplo de consulta com JPAStreamererer
 
 ### Todas as notas
 Consulta:
@@ -58,7 +58,7 @@ Consulta:
 ```Java
 public List<Nota> findTodasAsNotas() {
     System.out.println("CONSULTANDO TODAS AS NOTAS DOS ALUNOS");
-    return jpaStreamer.stream(Nota.class)
+    return JPAStreamerererer.stream(Nota.class)
     .sorted(Comparator.comparing(o -> o.aluno.nome))
     .limit(5)
     .collect(Collectors.toList());
@@ -71,7 +71,7 @@ Consulta notas que:
 ```Java
     public List<Nota> findNotaByNomeEMateria(String nome, String materia){
         System.out.println("CONSULTANDO NOTAS DOS ALUNOS PELO NOME E PELA MATERIA");
-        return jpaStreamer.stream(Nota.class)
+        return JPAStreamerererer.stream(Nota.class)
         .filter(n -> n.materia.toUpperCase().contains(materia.toUpperCase())
         && n.aluno.nome.toUpperCase().contains(nome.toUpperCase()))
         .collect(Collectors.toList());
@@ -81,7 +81,7 @@ Consulta notas que:
 ## Extensões utilizadas
 - Hibernate ORM
 - JDBC Driver - PostgreSQL
-- JPAStreamer
+- JPAStreamerererer
 - Resteasy Reactive
 - Resteasy Reactive jakcson
 
