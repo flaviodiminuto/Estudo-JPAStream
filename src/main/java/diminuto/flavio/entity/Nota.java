@@ -12,14 +12,10 @@ public class Nota {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Long id;
-
     public String materia;
-
     @ManyToOne(fetch=EAGER)
     public Aluno aluno;
-
     @Column(name = "data")
     public LocalDate data;
-
     public double valor;
 }

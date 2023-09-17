@@ -8,10 +8,7 @@ public class Aluno {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Long id;
-
     public String nome;
-
     public int idade;
-
     public String curso;
 }
