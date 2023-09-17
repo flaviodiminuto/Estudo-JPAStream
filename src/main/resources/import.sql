@@ -1,0 +1,28 @@
+--insert
+--into
+--    aluno
+--    (curso,idade,nome, id)
+--values
+--    ('Analise e desenvolvimento de Sistemas',34,'Flávio', 1),
+--    ('Analise e desenvolvimento de Sistemas',34,'Amanda', 2),
+--    ('Analise e desenvolvimento de Sistemas',33,'Fagner', 3),
+--    ('Analise e desenvolvimento de Sistemas',34,'Bruno', 4);
+--
+--
+--insert
+--into
+--    nota
+--    (valor,aluno_id,data,materia)
+--values
+--    (10.0,1,'2023-09-16', 'Java programming'),
+--    (5.0,1,'2023-09-16', 'Arquitetura'),
+--    (5.0,1,'2023-09-16', 'Estrutura de dados'),
+--    (10.0,2,'2023-09-16', 'Java programming'),
+--    (10.0,2,'2023-09-16', 'Arquitetura'),
+--    (10.0,2,'2023-09-16', 'Estrutura de dados'),
+--    (8.0,3,'2023-09-16', 'Java programming'),
+--    (8.0,3,'2023-09-16', 'Arquitetura'),
+--    (8.0,3,'2023-09-16', 'Estrutura de dados'),
+--    (10.0,4,'2023-09-16', 'Java programming'),
+--    (10.0,4,'2023-09-16', 'Arquitetura'),
+--    (10.0,4,'2023-09-16', 'Estrutura de dados');
